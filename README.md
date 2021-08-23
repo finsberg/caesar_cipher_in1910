@@ -1,3 +1,7 @@
+[![CI](https://github.com/finsberg/caesar_cipher_in1910/actions/workflows/main.yml/badge.svg)](https://github.com/finsberg/caesar_cipher_in1910/actions/workflows/main.yml)
+
+[![codecov](https://codecov.io/gh/finsberg/caesar_cipher_in1910/branch/master/graph/badge.svg?token=9VRTVLANGL)](https://codecov.io/gh/finsberg/caesar_cipher_in1910)
+
 # Learn testing using Caesar Cipher
 
 In this repo we implement a simple Caesar Cipher algorithm and test some functionality. For more info on how the Caesar Cipher is working check out [Wikipedia](https://en.wikipedia.org/wiki/Caesar_cipher)
