@@ -1,4 +1,3 @@
-* ap_features version:
 * Python version:
 * Operating System:
 
