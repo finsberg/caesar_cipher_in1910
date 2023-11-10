@@ -1,19 +1,17 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>caesar_cipher module &#8212; Ceasar Cipher example  documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=514cf933" />
     
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -46,10 +44,10 @@
           <div class="body" role="main">
             
   <section id="module-caesar_cipher">
-<span id="caesar-cipher-module"></span><h1>caesar_cipher module<a class="headerlink" href="#module-caesar_cipher" title="Permalink to this headline">¶</a></h1>
+<span id="caesar-cipher-module"></span><h1>caesar_cipher module<a class="headerlink" href="#module-caesar_cipher" title="Link to this heading">¶</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="caesar_cipher.create_shifted_alphabet">
-<span class="sig-prename descclassname"><span class="pre">caesar_cipher.</span></span><span class="sig-name descname"><span class="pre">create_shifted_alphabet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/caesar_cipher.html#create_shifted_alphabet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#caesar_cipher.create_shifted_alphabet" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">caesar_cipher.</span></span><span class="sig-name descname"><span class="pre">create_shifted_alphabet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/caesar_cipher.html#create_shifted_alphabet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#caesar_cipher.create_shifted_alphabet" title="Link to this definition">¶</a></dt>
 <dd><p>Given a shift return a dictionary with the
 shifted alphabath</p>
 <p class="rubric">Example</p>
@@ -57,14 +55,14 @@ shifted alphabath</p>
 &gt;&gt; print(new_letters)
 new_letters = {“a”: “b”, “b”: “c”, …}</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>shift</strong> (<em>int</em>) – The number of places to shift the alphabet</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dictionary with the original alphabet as keys and
 the new letters as values</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Dict[str, str]</p>
 </dd>
 </dl>
@@ -72,19 +70,19 @@ the new letters as values</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="caesar_cipher.decrypt">
-<span class="sig-prename descclassname"><span class="pre">caesar_cipher.</span></span><span class="sig-name descname"><span class="pre">decrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encrypted_message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/caesar_cipher.html#decrypt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#caesar_cipher.decrypt" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">caesar_cipher.</span></span><span class="sig-name descname"><span class="pre">decrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encrypted_message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/caesar_cipher.html#decrypt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#caesar_cipher.decrypt" title="Link to this definition">¶</a></dt>
 <dd><p>Decrypt the encypted message using ceaser shift</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>encrypted_message</strong> (<em>str</em>) – The message that should be decrypted</p></li>
 <li><p><strong>shift</strong> (<em>int</em>) – The ceasr shift</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Deacrypted message</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
@@ -92,19 +90,19 @@ the new letters as values</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="caesar_cipher.encrypt">
-<span class="sig-prename descclassname"><span class="pre">caesar_cipher.</span></span><span class="sig-name descname"><span class="pre">encrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/caesar_cipher.html#encrypt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#caesar_cipher.encrypt" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">caesar_cipher.</span></span><span class="sig-name descname"><span class="pre">encrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/caesar_cipher.html#encrypt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#caesar_cipher.encrypt" title="Link to this definition">¶</a></dt>
 <dd><p>Encrypt message with caesar shift</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>message</strong> (<em>str</em>) – The message you want to encrypt</p></li>
 <li><p><strong>shift</strong> (<em>int</em>) – The cesar shift used to encrypt the message</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The encrypted message</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
@@ -112,7 +110,7 @@ the new letters as values</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="caesar_cipher.rotate_string">
-<span class="sig-prename descclassname"><span class="pre">caesar_cipher.</span></span><span class="sig-name descname"><span class="pre">rotate_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/caesar_cipher.html#rotate_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#caesar_cipher.rotate_string" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">caesar_cipher.</span></span><span class="sig-name descname"><span class="pre">rotate_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/caesar_cipher.html#rotate_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#caesar_cipher.rotate_string" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </section>
@@ -124,12 +122,29 @@ the new letters as values</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Welcome to Ceasar Cipher example’s documentation!</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="test_caesar_cipher.html"
-                        title="next chapter">test_caesar_cipher module</a></p>
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">caesar_cipher module</a><ul>
+<li><a class="reference internal" href="#caesar_cipher.create_shifted_alphabet"><code class="docutils literal notranslate"><span class="pre">create_shifted_alphabet()</span></code></a></li>
+<li><a class="reference internal" href="#caesar_cipher.decrypt"><code class="docutils literal notranslate"><span class="pre">decrypt()</span></code></a></li>
+<li><a class="reference internal" href="#caesar_cipher.encrypt"><code class="docutils literal notranslate"><span class="pre">encrypt()</span></code></a></li>
+<li><a class="reference internal" href="#caesar_cipher.rotate_string"><code class="docutils literal notranslate"><span class="pre">rotate_string()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Welcome to Ceasar Cipher example’s documentation!</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="test_caesar_cipher.html"
+                          title="next chapter">test_caesar_cipher module</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -146,7 +161,7 @@ the new letters as values</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -171,8 +186,8 @@ the new letters as values</p>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Henrik Finsberg.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    &#169; Copyright 2022, Henrik Finsberg.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>
